@@ -133,8 +133,11 @@ public class AdminDAOImpl implements AdminDAO {
 		try {
 			Connection conn = DriverManager.getConnection(connectionName);
 			PreparedStatement prpStmt = null;
+			String sha256hex = Hashing.sha256()
+					  .hashString(a.getPassword(), StandardCharsets.UTF_8)
+					  .toString();
 			prpStmt = conn.prepareStatement(updatePasswordSQL);
-			prpStmt.setString(1, a.getPassword());
+			prpStmt.setString(1, sha256hex);
 			prpStmt.setString(2, a.getId());
 			prpStmt.executeUpdate();
 			PreparedStatement prpStmtUsers = null;
