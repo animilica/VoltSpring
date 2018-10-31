@@ -1,0 +1,2476 @@
+{
+	"info": {
+		"_postman_id": "bdbf5eee-5167-4601-a19d-ee08b3a3dca6",
+		"name": "ZahteviVoltDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8090/organizations/insertOrganization",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"871cdf06-1e2f-4673-adaf-788ea8c94ce6\",\n\t\"name\" : \"A\",\n\t\"master\" : 1,\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/organizations/insertOrganization\"",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"organizations",
+						"insertOrganization\""
+					]
+				},
+				"description": "Test"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/organizations/insertOrganization",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"C\",\n\t\"master\" : 0\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/organizations/insertOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"organizations",
+						"insertOrganization"
+					]
+				},
+				"description": "Dodavanje organizacije"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/organizations/insertOrganization",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"B\",\n\t\"master\" : 0\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/organizations/insertOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"organizations",
+						"insertOrganization"
+					]
+				},
+				"description": "Dodavanje organizacije"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/admins/insertAdmin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"firstName\" : \"Zora\",\n\t\"lastName\" : \"Zoric\",\n\t\"email\" : \"zora@zokinmail.com\",\n\t\"password\" : \"zoraPass\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/admins/insertAdmin",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"admins",
+						"insertAdmin"
+					]
+				},
+				"description": "Insert admin"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/admins/insertAdmin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"firstName\" : \"Pera\",\n\t\"lastName\" : \"Peric\",\n\t\"email\" : \"pera@perinmail.com\",\n\t\"password\" : \"peraPass\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/admins/insertAdmin",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"admins",
+						"insertAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/admins/insertAdmin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"firstName\" : \"Mika\",\n\t\"lastName\" : \"Mikic\",\n\t\"email\" : \"mika@mikinmail.com\",\n\t\"password\" : \"mikaPass\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/admins/insertAdmin",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"admins",
+						"insertAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/admins/insertAdmin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"firstName\" : \"Sloba\",\n\t\"lastName\" : \"Stankovic\",\n\t\"email\" : \"slobke@slobinnmail.com\",\n\t\"password\" : \"slobaPass\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/admins/insertAdmin",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"admins",
+						"insertAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/admins/insertAdmin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"firstName\" : \"Jovana\",\n\t\"lastName\" : \"Jovanovic\",\n\t\"email\" : \"dzo@jocinmail.com\",\n\t\"password\" : \"dzoPass\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/admins/insertAdmin",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"admins",
+						"insertAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/admins/insertAdmin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"firstName\" : \"Nemanja\",\n\t\"lastName\" : \"Nemanjic\",\n\t\"email\" : \"nele@necinmail.com\",\n\t\"password\" : \"nemaPass\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/admins/insertAdmin",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"admins",
+						"insertAdmin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/insertProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Elektromotor\",\n\t\"description\" : \"\",\n\t\"price\" : \"550\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/insertProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"insertProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/insertProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Energetski Kabel\",\n\t\"description\" : \"\",\n\t\"price\" : \"100\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/insertProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"insertProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/insertProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Osigurac\",\n\t\"description\" : \"\",\n\t\"price\" : \"20\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/insertProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"insertProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/insertProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Ves Masina\",\n\t\"description\" : \"\",\n\t\"price\" : \"2000\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/insertProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"insertProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/insertProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Bojler\",\n\t\"description\" : \"\",\n\t\"price\" : \"500\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/insertProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"insertProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/insertProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Sporet\",\n\t\"description\" : \"\",\n\t\"price\" : \"1200\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/insertProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"insertProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/insertProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Sudo Masina\",\n\t\"description\" : \"\",\n\t\"price\" : \"800\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/insertProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"insertProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/roles/insertRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"CRU\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/roles/insertRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"roles",
+						"insertRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/roles/insertRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"CRUD\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/roles/insertRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"roles",
+						"insertRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/roles/insertRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"R\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/roles/insertRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"roles",
+						"insertRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/roles/insertRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"CRUD\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/roles/insertRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"roles",
+						"insertRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/roles/insertRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Vidi proizvode\",\n\t\"organizationId\" : \"7d715ffb-5f3f-4d56-b1dc-77a8388b67fd\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/roles/insertRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"roles",
+						"insertRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/roles/insertRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"CRU\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/roles/insertRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"roles",
+						"insertRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/adminRoles/insertAdminRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"adminId\" : \"34ad7173-791c-40c8-ac3b-23f09a4a3955\",\n\t\"roleId\" : \"ac46964d-7c9e-4b1d-8dca-0126163774d6\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/adminRoles/insertAdminRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"adminRoles",
+						"insertAdminRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/adminRoles/insertAdminRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"adminId\" : \"34ad7173-791c-40c8-ac3b-23f09a4a3955\",\n\t\"roleId\" : \"ac46964d-7c9e-4b1d-8dca-0126163774d6\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/adminRoles/insertAdminRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"adminRoles",
+						"insertAdminRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/adminRoles/insertAdminRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"adminId\" : \"5426d3a5-b31a-4b45-b5d4-854fcb3fe234\",\n\t\"roleId\" : \"ac46964d-7c9e-4b1d-8dca-0126163774d6\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/adminRoles/insertAdminRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"adminRoles",
+						"insertAdminRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/adminRoles/insertAdminRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"adminId\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\",\n\t\"roleId\" : \"0f889f18-b9a5-422b-a9e7-ad58d3d55c2f\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/adminRoles/insertAdminRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"adminRoles",
+						"insertAdminRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/adminRoles/insertAdminRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"adminId\" : \"a3930f64-194e-4346-91e4-39cd5403cb7d\",\n\t\"roleId\" : \"95f73aee-8753-46a4-bea0-e4526b33b39d\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/adminRoles/insertAdminRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"adminRoles",
+						"insertAdminRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/adminRoles/insertAdminRole",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"adminId\" : \"9ad905d4-5a1b-4652-a53a-9adf93091a73\",\n\t\"roleId\" : \"84cdc680-2b5c-40f5-b780-2e0554154588\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/adminRoles/insertAdminRole",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"adminRoles",
+						"insertAdminRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"READ\",\n\t\"roleId\" : \"c02a5e9c-32c6-47c3-85ab-477d644d0ece\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"UPDATE\",\n\t\"roleId\" : \"c02a5e9c-32c6-47c3-85ab-477d644d0ece\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"DELETE\",\n\t\"roleId\" : \"c02a5e9c-32c6-47c3-85ab-477d644d0ece\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"UPDATE\",\n\t\"roleId\" : \"c02a5e9c-32c6-47c3-85ab-477d644d0ece\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"READ\",\n\t\"roleId\" : \"0f889f18-b9a5-422b-a9e7-ad58d3d55c2f\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"DELETE\",\n\t\"roleId\" : \"0f889f18-b9a5-422b-a9e7-ad58d3d55c2f\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"UPDATE\",\n\t\"roleId\" : \"0f889f18-b9a5-422b-a9e7-ad58d3d55c2f\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"CREATE\",\n\t\"roleId\" : \"0f889f18-b9a5-422b-a9e7-ad58d3d55c2f\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"CREATE\",\n\t\"roleId\" : \"348aebd8-5148-4d3a-b7d4-e846167037c5\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"READ\",\n\t\"roleId\" : \"348aebd8-5148-4d3a-b7d4-e846167037c5\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"UPDATE\",\n\t\"roleId\" : \"348aebd8-5148-4d3a-b7d4-e846167037c5\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"CREATE\",\n\t\"roleId\" : \"95f73aee-8753-46a4-bea0-e4526b33b39d\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"READ\",\n\t\"roleId\" : \"95f73aee-8753-46a4-bea0-e4526b33b39d\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"UPDATE\",\n\t\"roleId\" : \"95f73aee-8753-46a4-bea0-e4526b33b39d\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"READ\",\n\t\"roleId\" : \"84cdc680-2b5c-40f5-b780-2e0554154588\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/permissions/insertPermission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"entity\" : \"PRODUCT\",\n\t\"operation\" : \"READ\",\n\t\"roleId\" : \"ac46964d-7c9e-4b1d-8dca-0126163774d6\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/permissions/insertPermission",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"permissions",
+						"insertPermission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/productSharingStatements/insertProductSharingStatement",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"sharingOrgId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"accessingOrgId\" : \"7d715ffb-5f3f-4d56-b1dc-77a8388b67fd\",\n\t\"quantity\" : \"10\",\n\t\"relation\" : \"GT\",\n\t\"approved\" : 1,\n\t\"price\": null,\n\t\"roleId\": \"c02a5e9c-32c6-47c3-85ab-477d644d0ece\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/productSharingStatements/insertProductSharingStatement",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"productSharingStatements",
+						"insertProductSharingStatement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/productSharingStatements/insertProductSharingStatement Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"sharingOrgId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"accessingOrgId\" : \"7d715ffb-5f3f-4d56-b1dc-77a8388b67fd\",\n\t\"quantity\" : \"10\",\n\t\"relation\" : \"LT\",\n\t\"approved\" : 1,\n\t\"price\": null,\n\t\"roleId\": \"ac46964d-7c9e-4b1d-8dca-0126163774d6\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/productSharingStatements/insertProductSharingStatement",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"productSharingStatements",
+						"insertProductSharingStatement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/organizations/getOrganizations",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ime",
+							"type": "text"
+						},
+						{
+							"key": "master",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8090/organizations/getOrganizations",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"organizations",
+						"getOrganizations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/admins/getAdmins",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Ime",
+							"type": "text"
+						},
+						{
+							"key": "master",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8090/admins/getAdmins",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"admins",
+						"getAdmins"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/organizations/updateOrganization",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"name\" : \"naziv56\",\n\t\"master\" : 0\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/organizations/updateOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"organizations",
+						"updateOrganization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/organizations/updateOrganization",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"name\" : \"B\",\n\t\"master\" : 0\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/organizations/updateOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"organizations",
+						"updateOrganization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/organizations/insertOrganization",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"novaorg\",\n\t\"master\" : 1\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/organizations/insertOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"organizations",
+						"insertOrganization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/organizations/deleteOrganization",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "253c4e26-7560-4ceb-98a3-5ee9168cf4b4"
+				},
+				"url": {
+					"raw": "localhost:8090/organizations/deleteOrganization",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"organizations",
+						"deleteOrganization"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/getProducts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"6bdee4f4-8cc1-4f54-bdff-f7339c49954c\""
+				},
+				"url": {
+					"raw": "localhost:8090/products/getProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"getProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/admins/changePassword",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\",\n\t\"firstName\" : \"\",\n\t\"lastName\" : \"\",\n\t\"email\" : \"\",\n\t\"password\" : \"slobaPass341\",\n\t\"organizationId\" : \"\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/admins/changePassword",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"admins",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/admins/changePassword",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\",\n\t\"firstName\" : \"\",\n\t\"lastName\" : \"\",\n\t\"email\" : \"\",\n\t\"password\" : \"slobaPass\",\n\t\"organizationId\" : \"\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/admins/changePassword",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"admins",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/getPermittedProducts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "5426d3a5-b31a-4b45-b5d4-854fcb3fe234"
+				},
+				"url": {
+					"raw": "localhost:8090/products/getPermittedProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"getPermittedProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/getPermittedProducts",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/plain"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "9ad905d4-5a1b-4652-a53a-9adf93091a73"
+				},
+				"url": {
+					"raw": "localhost:8090/products/getPermittedProducts",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"getPermittedProducts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
