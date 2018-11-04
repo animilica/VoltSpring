@@ -423,7 +423,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Elektromotor\",\n\t\"description\" : \"\",\n\t\"price\" : \"550\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Elektromotor\",\n\t\"description\" : \"\",\n\t\"price\" : \"550\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"c6fb82e1-c80b-40e7-9b5e-c9aa72843093\"\n}"
 				},
 				"url": {
 					"raw": "localhost:8090/products/insertProduct",
@@ -466,7 +466,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Energetski Kabel\",\n\t\"description\" : \"\",\n\t\"price\" : \"100\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Energetski Kabel\",\n\t\"description\" : \"\",\n\t\"price\" : \"100\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"c6fb82e1-c80b-40e7-9b5e-c9aa72843093\"\n}"
 				},
 				"url": {
 					"raw": "localhost:8090/products/insertProduct",
@@ -509,7 +509,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Osigurac\",\n\t\"description\" : \"\",\n\t\"price\" : \"20\",\n\t\"organizationId\" : \"0a4794a9-5859-49da-9c97-be203e0bdedd\"\n}"
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Osigurac\",\n\t\"description\" : \"\",\n\t\"price\" : \"20\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"c6fb82e1-c80b-40e7-9b5e-c9aa72843093\"\n}"
 				},
 				"url": {
 					"raw": "localhost:8090/products/insertProduct",
@@ -552,7 +552,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Ves Masina\",\n\t\"description\" : \"\",\n\t\"price\" : \"2000\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Ves Masina\",\n\t\"description\" : \"\",\n\t\"price\" : \"2000\",\n\t\"organizationId\" : \"7d715ffb-5f3f-4d56-b1dc-77a8388b67fd\",\n\t\"adminId\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\"\n}"
 				},
 				"url": {
 					"raw": "localhost:8090/products/insertProduct",
@@ -595,7 +595,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Bojler\",\n\t\"description\" : \"\",\n\t\"price\" : \"500\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Bojler\",\n\t\"description\" : \"\",\n\t\"price\" : \"500\",\n\t\"organizationId\" : \"7d715ffb-5f3f-4d56-b1dc-77a8388b67fd\",\n\t\"adminId\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\"\n}"
 				},
 				"url": {
 					"raw": "localhost:8090/products/insertProduct",
@@ -638,7 +638,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Sporet\",\n\t\"description\" : \"\",\n\t\"price\" : \"1200\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Sporet\",\n\t\"description\" : \"\",\n\t\"price\" : \"1200\",\n\t\"organizationId\" : \"7d715ffb-5f3f-4d56-b1dc-77a8388b67fd\",\n\t\"adminId\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\"\n}"
 				},
 				"url": {
 					"raw": "localhost:8090/products/insertProduct",
@@ -681,7 +681,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Sudo Masina\",\n\t\"description\" : \"\",\n\t\"price\" : \"800\",\n\t\"organizationId\" : \"cb15933a-e7d3-4cf9-a75c-82f7ea88b456\"\n}"
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Sudo Masina\",\n\t\"description\" : \"\",\n\t\"price\" : \"800\",\n\t\"organizationId\" : \"7d715ffb-5f3f-4d56-b1dc-77a8388b67fd\",\n\t\"adminId\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\"\n}"
 				},
 				"url": {
 					"raw": "localhost:8090/products/insertProduct",
