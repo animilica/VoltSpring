@@ -7,18 +7,30 @@ public class ProductTransferObject {
 	private String description;
 	private String price;
 	private String organizationId;
+	private String adminId;
 	
-	public ProductTransferObject(String id, String name, String description, String price, String organizationId) {
+	public ProductTransferObject(String id, String name,
+			String description, String price, String organizationId, String adminId) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.price = price;
 		this.organizationId = organizationId;
+		this.adminId = adminId;
 	}
 
 	public ProductTransferObject() {
 		super();
+	}
+	
+
+	public String getAdminId() {
+		return adminId;
+	}
+
+	public void setAdminId(String adminId) {
+		this.adminId = adminId;
 	}
 
 	public String getId() {

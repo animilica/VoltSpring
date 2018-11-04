@@ -233,6 +233,12 @@ public class ProductDAOImpl implements ProductDAO{
 		if (org == null) {
 			return "No such organization";
 		}
+		
+		Admin admin = adDAO.findById(p.getAdminId());
+		
+		if (!admin.getOrganizationId().equals(org.getId())) {
+			return "You are not allowed to add products to this organization.";
+		}
 
 		
 		try {
@@ -264,6 +270,31 @@ public class ProductDAOImpl implements ProductDAO{
 		if (org == null) {
 			return "No such organization";
 		}
+		
+		List<ProductDTO> pDTO = this.getPermittedProducts(pr.getAdminId());
+		
+		ProductDTO updatingProduct = null;
+		for (ProductDTO prodDTO : pDTO) {
+			if (prodDTO.getProduct().getId() == pr.getId()) {
+				updatingProduct = prodDTO;
+			}
+		}
+		
+		if(updatingProduct == null) {
+			return "You can't edit this product";
+		}
+		
+		boolean foundOp = false;
+		for (Operation op : updatingProduct.getAllowedOps()) {
+			if(op.equals(Operation.UPDATE)) {
+				foundOp = true;
+			}
+		}
+		
+		if(!foundOp) {
+			return "You have no update privileges for this product";
+		}
+		
 		
 		try {
 			Connection conn = DriverManager.getConnection(connectionName);
