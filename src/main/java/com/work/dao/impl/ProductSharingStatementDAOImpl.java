@@ -75,7 +75,7 @@ public class ProductSharingStatementDAOImpl implements ProductSharingStatementDA
 		Role role = roleDao.findById(p.getRoleId());
 		
 		if (role == null) {
-			return "No such Role";
+			return "No such Role!";
 		}
 
 		try {
@@ -86,7 +86,7 @@ public class ProductSharingStatementDAOImpl implements ProductSharingStatementDA
 				}
 			}
 			if (!contains) {
-				return "Improper value for Entity";
+				return "Improper value for Entity!";
 			}
 			
 			Connection conn = DriverManager.getConnection(connectionName);
@@ -105,10 +105,10 @@ public class ProductSharingStatementDAOImpl implements ProductSharingStatementDA
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override
@@ -117,7 +117,7 @@ public class ProductSharingStatementDAOImpl implements ProductSharingStatementDA
 		Role role = roleDao.findById(pss.getRoleId());
 		
 		if (role == null) {
-			return "No such Role";
+			return "No such Role!";
 		}
 	
 		try {
@@ -128,7 +128,7 @@ public class ProductSharingStatementDAOImpl implements ProductSharingStatementDA
 				}
 			}
 			if (!contains) {
-				return "Improper value for Entity";
+				return "Improper value for Entity!";
 			}
 			
 			Connection conn = DriverManager.getConnection(connectionName);
@@ -146,10 +146,10 @@ public class ProductSharingStatementDAOImpl implements ProductSharingStatementDA
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override
@@ -164,10 +164,10 @@ public class ProductSharingStatementDAOImpl implements ProductSharingStatementDA
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override
@@ -287,10 +287,10 @@ public class ProductSharingStatementDAOImpl implements ProductSharingStatementDA
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 	
 	
@@ -307,10 +307,10 @@ public class ProductSharingStatementDAOImpl implements ProductSharingStatementDA
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	

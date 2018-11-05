@@ -78,11 +78,11 @@ public class AdminRoleDAOImpl implements AdminRoleDAO {
 		Role role = roleDao.findById(ar.getRoleId());
 		
 		if (role == null) {
-			return "No such Role";
+			return "No such Role!";
 		}
 		
 		if (admin == null) {
-			return "No such Admin";
+			return "No such Admin!";
 		}
 		
 		try {
@@ -97,10 +97,10 @@ public class AdminRoleDAOImpl implements AdminRoleDAO {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 		
 	}
 	
@@ -112,11 +112,11 @@ public class AdminRoleDAOImpl implements AdminRoleDAO {
 		Role role = roleDao.findById(ar.getRoleId());
 		
 		if (role == null) {
-			return "No such Role";
+			return "No such Role!";
 		}
 		
 		if (admin == null) {
-			return "No such Admin";
+			return "No such Admin!";
 		}
 		
 		try {
@@ -132,10 +132,10 @@ public class AdminRoleDAOImpl implements AdminRoleDAO {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 	
 	@Override
@@ -150,10 +150,10 @@ public class AdminRoleDAOImpl implements AdminRoleDAO {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 	
 	

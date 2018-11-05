@@ -2471,6 +2471,221 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"1e7ca900-a5ee-44f6-8541-2277bb003f66\",\n\t\"name\" : \"Elektromotor\",\n\t\"description\" : \"40\",\n\t\"price\" : \"680\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"34ad7173-791c-40c8-ac3b-23f09a4a3955\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"1e7ca900-a5ee-44f6-8541-2277bb003f66\",\n\t\"name\" : \"Elektromotor\",\n\t\"description\" : \"40\",\n\t\"price\" : \"680\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"c6fb82e1-c80b-40e7-9b5e-c9aa72843093\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/insertProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Sudo Masina supernova\",\n\t\"description\" : \"15\",\n\t\"price\" : \"150\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"9ad905d4-5a1b-4652-a53a-9adf93091a73\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/insertProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"insertProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/insertProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"Sudo Masina nova\",\n\t\"description\" : \"5\",\n\t\"price\" : \"850\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"c6fb82e1-c80b-40e7-9b5e-c9aa72843093\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/insertProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"insertProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"\",\n\t\"name\" : \"\",\n\t\"description\" : \"4\",\n\t\"price\" : \"580\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"c6fb82e1-c80b-40e7-9b5e-c9aa72843093\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

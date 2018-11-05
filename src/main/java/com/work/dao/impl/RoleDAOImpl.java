@@ -70,7 +70,7 @@ public class RoleDAOImpl implements RoleDAO{
 		
 		Organization org = orgDAO.findById(r.getOrganizationId());
 		if (org == null) {
-			return "No such organization";
+			return "No such organization!";
 		}
 		
 		try {
@@ -85,10 +85,10 @@ public class RoleDAOImpl implements RoleDAO{
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override
@@ -96,7 +96,7 @@ public class RoleDAOImpl implements RoleDAO{
 		
 		Organization org = orgDAO.findById(r.getOrganizationId());
 		if (org == null) {
-			return "No such organization";
+			return "No such organization!";
 		}
 		
 		try {
@@ -110,10 +110,10 @@ public class RoleDAOImpl implements RoleDAO{
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override
@@ -128,10 +128,10 @@ public class RoleDAOImpl implements RoleDAO{
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override

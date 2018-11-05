@@ -231,15 +231,36 @@ public class ProductDAOImpl implements ProductDAO{
 		
 		Organization org = orgDAO.findById(p.getOrganizationId());
 		if (org == null) {
-			return "No such organization";
+			return "No such organization!";
 		}
 		
 		Admin admin = adDAO.findById(p.getAdminId());
 		
-		if (!admin.getOrganizationId().equals(org.getId())) {
-			return "You are not allowed to add products to this organization.";
+		String orgId = p.getOrganizationId();
+		Role rola = null;
+		List<AdminRole> ars = arDAO.findByAdminId(admin.getId());
+		for (AdminRole ar : ars) {
+			Role aRola = roleDAO.findById(ar.getRoleID());
+			if (aRola.getOrganizationId().equals(orgId)) {
+				rola = aRola;
+			}
 		}
-
+		if (rola == null) {
+			return "You are not allowed to add products to this organization!";
+		}
+		
+		List<Permission> perms = prmDAO.findByRoleId(rola.getId());
+		boolean foundPerm = false;
+		for (Permission prm : perms) {
+			if(prm.getOperation().equals(Operation.CREATE)) {
+				foundPerm = true;
+			}
+		}
+		
+		if (!foundPerm) {
+			return "You are not allowed to add products to this organization!";
+		}
+		
 		
 		try {
 			Connection conn = DriverManager.getConnection(connectionName);
@@ -253,14 +274,13 @@ public class ProductDAOImpl implements ProductDAO{
 			prpStmt.setString(1, uuid.toString());
 			prpStmt.execute();
 			
-			
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override
@@ -268,33 +288,58 @@ public class ProductDAOImpl implements ProductDAO{
 		
 		Organization org = orgDAO.findById(pr.getOrganizationId());
 		if (org == null) {
-			return "No such organization";
+			return "No such organization!";
 		}
 		
-		List<ProductDTO> pDTO = this.getPermittedProducts(pr.getAdminId());
+		Admin admin = adDAO.findById(pr.getAdminId());
 		
-		ProductDTO updatingProduct = null;
-		for (ProductDTO prodDTO : pDTO) {
-			if (prodDTO.getProduct().getId() == pr.getId()) {
-				updatingProduct = prodDTO;
+		String orgId = pr.getOrganizationId();
+		
+		String prodId = pr.getId();
+		if (prodId.equals("")) {
+			return "Missing product Id!";
+		}
+		
+		Role rola = null;
+		List<AdminRole> ars = arDAO.findByAdminId(admin.getId());
+		for (AdminRole ar : ars) {
+			Role aRola = roleDAO.findById(ar.getRoleID());
+		
+			if (aRola.getOrganizationId().equals(orgId)) {
+				rola = aRola;
+			}
+		}
+	
+		if (rola == null) {
+			return "You can't edit this product!";
+		}
+		List<Permission> perms = prmDAO.findByRoleId(rola.getId());
+		boolean foundPerm = false;
+		for(Permission prm : perms) {
+			if(prm.getOperation().equals(Operation.UPDATE)) {
+				foundPerm = true;
 			}
 		}
 		
-		if(updatingProduct == null) {
-			return "You can't edit this product";
+		List<ProductSharingStatement> psList = pssDAO.findByAccessingOrganization(admin.getOrganizationId());
+		List<String> roles = new ArrayList<String>();
+		for (ProductSharingStatement pss : psList) {
+			roles.add(pss.getRoleId());
+		}
+			
+		boolean foundShared = false;
+		for(String rol : roles) {
+			 perms = prmDAO.findByRoleId(rol);
+			 for(Permission prm : perms) {
+				 if(prm.getOperation().equals(Operation.UPDATE)) {
+					 foundShared = true;
+				 }
+			 }
 		}
 		
-		boolean foundOp = false;
-		for (Operation op : updatingProduct.getAllowedOps()) {
-			if(op.equals(Operation.UPDATE)) {
-				foundOp = true;
-			}
+		if (!foundPerm && !foundShared) {
+			return "You can't edit this product!";
 		}
-		
-		if(!foundOp) {
-			return "You have no update privileges for this product";
-		}
-		
 		
 		try {
 			Connection conn = DriverManager.getConnection(connectionName);
@@ -307,14 +352,12 @@ public class ProductDAOImpl implements ProductDAO{
 			prpStmt.setString(5, pr.getId());
 			prpStmt.executeUpdate();
 			
-			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override
@@ -331,10 +374,10 @@ public class ProductDAOImpl implements ProductDAO{
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override

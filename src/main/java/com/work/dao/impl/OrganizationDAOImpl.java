@@ -75,10 +75,10 @@ public class OrganizationDAOImpl implements OrganizationDAO{
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 		
 	}
 
@@ -98,10 +98,10 @@ public class OrganizationDAOImpl implements OrganizationDAO{
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override
@@ -118,10 +118,10 @@ public class OrganizationDAOImpl implements OrganizationDAO{
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 
 	@Override

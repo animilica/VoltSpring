@@ -79,7 +79,7 @@ public class AdminDAOImpl implements AdminDAO {
 		try {
 			Organization org = orgDAO.findById(a.getOrganizationId());
 			if (org == null) {
-				return "No such organization";
+				return "No such organization!";
 			}
 			Connection conn = DriverManager.getConnection(connectionName);
 			PreparedStatement prpStmt = null;
@@ -103,9 +103,9 @@ public class AdminDAOImpl implements AdminDAO {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
-		return "Success";
+		return "Success!";
 	}
 	
 	@Override
@@ -122,9 +122,9 @@ public class AdminDAOImpl implements AdminDAO {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
-		return "Success";
+		return "Success!";
 	}
 	
 	@Override
@@ -148,9 +148,9 @@ public class AdminDAOImpl implements AdminDAO {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
-		return "Success";
+		return "Success!";
 	}
 
 	@Override
@@ -170,10 +170,10 @@ public class AdminDAOImpl implements AdminDAO {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			return "Failure";
+			return "Failure!";
 		}
 		
-		return "Success";
+		return "Success!";
 	}
 	
 	@Override
