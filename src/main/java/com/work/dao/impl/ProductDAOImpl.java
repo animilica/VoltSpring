@@ -283,6 +283,7 @@ public class ProductDAOImpl implements ProductDAO{
 		return "Success!";
 	}
 
+	
 	@Override
 	public String update(ProductTransferObject pr) {
 		
@@ -294,25 +295,18 @@ public class ProductDAOImpl implements ProductDAO{
 		Admin admin = adDAO.findById(pr.getAdminId());
 		
 		String orgId = pr.getOrganizationId();
-		
-		String prodId = pr.getId();
-		if (prodId.equals("")) {
-			return "Missing product Id!";
-		}
-		
 		Role rola = null;
 		List<AdminRole> ars = arDAO.findByAdminId(admin.getId());
 		for (AdminRole ar : ars) {
 			Role aRola = roleDAO.findById(ar.getRoleID());
-		
 			if (aRola.getOrganizationId().equals(orgId)) {
 				rola = aRola;
 			}
 		}
-	
-		if (rola == null) {
+		if (rola==null) {
 			return "You can't edit this product!";
 		}
+		
 		List<Permission> perms = prmDAO.findByRoleId(rola.getId());
 		boolean foundPerm = false;
 		for(Permission prm : perms) {
@@ -326,15 +320,47 @@ public class ProductDAOImpl implements ProductDAO{
 		for (ProductSharingStatement pss : psList) {
 			roles.add(pss.getRoleId());
 		}
-			
+		
 		boolean foundShared = false;
+		int i=0;
 		for(String rol : roles) {
 			 perms = prmDAO.findByRoleId(rol);
 			 for(Permission prm : perms) {
 				 if(prm.getOperation().equals(Operation.UPDATE)) {
-					 foundShared = true;
+					 ProductSharingStatement pss = psList.get(i);
+					 if ((pss.getQuantity() == null || pss.getQuantity() == 0) && (pss.getPrice() == null || pss.getPrice() == 0)){
+						foundShared = true;
+					 } else {
+						 String rel = pss.getRelation().toString();
+						 Product prod = this.findById(pr.getId());
+						 boolean allGood = true;
+						 if(pss.getPrice()!=null && pss.getPrice()!=0) {
+							switch(rel) {
+								case "EQ" : if (!pss.getPrice().toString().equals(prod.getPrice().toString())) allGood = false; break;
+								case "GT" : if (prod.getPrice() <= Double.parseDouble(pss.getPrice().toString())) allGood = false; break;
+								case "GTE" : if (prod.getPrice() < Double.parseDouble(pss.getPrice().toString())) allGood = false; break;
+								case "LT" : if (prod.getPrice() >= Double.parseDouble(pss.getPrice().toString())) allGood = false; break;
+								case "LTE" : if (prod.getPrice() > Double.parseDouble(pss.getPrice().toString())) allGood = false; break;
+							}
+						 }
+						 
+						 if(pss.getQuantity() == null || pss.getQuantity() == 0) {
+							switch(rel) {
+								case "EQ" : if (!pss.getQuantity().toString().equals(prod.getDescription().toString())) allGood = false; break;
+								case "GT" : if (Double.parseDouble(prod.getDescription()) <= Double.parseDouble(pss.getQuantity().toString())) allGood = false; break;
+								case "GTE" : if (Double.parseDouble(prod.getDescription()) < Double.parseDouble(pss.getQuantity().toString())) allGood = false; break;
+								case "LT" : if (Double.parseDouble(prod.getDescription()) >= Double.parseDouble(pss.getQuantity().toString())) allGood = false; break;
+								case "LTE" : if (Double.parseDouble(prod.getDescription()) > Double.parseDouble(pss.getQuantity().toString())) allGood = false; break;
+							}
+						 }
+						 
+						 if(allGood){
+							 foundShared = true;
+						 }
+					 }
 				 }
 			 }
+			 i = i +1;
 		}
 		
 		if (!foundPerm && !foundShared) {
