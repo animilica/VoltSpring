@@ -303,15 +303,16 @@ public class ProductDAOImpl implements ProductDAO{
 				rola = aRola;
 			}
 		}
-		if (rola==null) {
-			return "You can't edit this product!";
-		}
-		
-		List<Permission> perms = prmDAO.findByRoleId(rola.getId());
 		boolean foundPerm = false;
-		for(Permission prm : perms) {
-			if(prm.getOperation().equals(Operation.UPDATE)) {
-				foundPerm = true;
+		if (rola!=null) {
+		
+			
+			List<Permission> perms = prmDAO.findByRoleId(rola.getId());
+			
+			for(Permission prm : perms) {
+				if(prm.getOperation().equals(Operation.UPDATE)) {
+					foundPerm = true;
+				}
 			}
 		}
 		
@@ -324,7 +325,7 @@ public class ProductDAOImpl implements ProductDAO{
 		boolean foundShared = false;
 		int i=0;
 		for(String rol : roles) {
-			 perms = prmDAO.findByRoleId(rol);
+			List<Permission> perms = prmDAO.findByRoleId(rol);
 			 for(Permission prm : perms) {
 				 if(prm.getOperation().equals(Operation.UPDATE)) {
 					 ProductSharingStatement pss = psList.get(i);
@@ -344,7 +345,7 @@ public class ProductDAOImpl implements ProductDAO{
 							}
 						 }
 						 
-						 if(pss.getQuantity() == null || pss.getQuantity() == 0) {
+						 if(pss.getQuantity() != null || pss.getQuantity() != 0) {
 							switch(rel) {
 								case "EQ" : if (!pss.getQuantity().toString().equals(prod.getDescription().toString())) allGood = false; break;
 								case "GT" : if (Double.parseDouble(prod.getDescription()) <= Double.parseDouble(pss.getQuantity().toString())) allGood = false; break;
@@ -353,7 +354,6 @@ public class ProductDAOImpl implements ProductDAO{
 								case "LTE" : if (Double.parseDouble(prod.getDescription()) > Double.parseDouble(pss.getQuantity().toString())) allGood = false; break;
 							}
 						 }
-						 
 						 if(allGood){
 							 foundShared = true;
 						 }

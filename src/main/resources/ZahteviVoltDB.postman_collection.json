@@ -2686,6 +2686,350 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"1e7ca900-a5ee-44f6-8541-2277bb003f66\",\n\t\"name\" : \"Elektromotor\",\n\t\"description\" : \"4\",\n\t\"price\" : \"50\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"7ee7b53d-31b6-4c27-a815-c70062a41e16\",\n\t\"name\" : \"Osigurac\",\n\t\"description\" : \"120\",\n\t\"price\" : \"21\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"c69f4e6a-aa26-45c2-b5f7-4796f324b356\",\n\t\"name\" : \"Kuciste\",\n\t\"description\" : \"2\",\n\t\"price\" : \"201\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"c69f4e6a-aa26-45c2-b5f7-4796f324b356\",\n\t\"name\" : \"Kuciste\",\n\t\"description\" : \"2\",\n\t\"price\" : \"2001\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"c69f4e6a-aa26-45c2-b5f7-4796f324b356\",\n\t\"name\" : \"Kuciste\",\n\t\"description\" : \"20\",\n\t\"price\" : \"2001\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"cb1de02d-e686-49aa-99a5-c3e64a9396d6\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"1e7ca900-a5ee-44f6-8541-2277bb003f66\",\n\t\"name\" : \"Elektromotoric\",\n\t\"description\" : \"15\",\n\t\"price\" : \"511\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"c6fb82e1-c80b-40e7-9b5e-c9aa72843093\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"1e7ca900-a5ee-44f6-8541-2277bb003f66\",\n\t\"name\" : \"Elektromotoric\",\n\t\"description\" : \"5\",\n\t\"price\" : \"511\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"c6fb82e1-c80b-40e7-9b5e-c9aa72843093\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/products/updateProduct",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : \"1e7ca900-a5ee-44f6-8541-2277bb003f66\",\n\t\"name\" : \"Elektromotoric\",\n\t\"description\" : \"15\",\n\t\"price\" : \"511\",\n\t\"organizationId\" : \"bf14e48c-da8b-42a7-a410-4e3432974733\",\n\t\"adminId\" : \"c6fb82e1-c80b-40e7-9b5e-c9aa72843093\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8090/products/updateProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"products",
+						"updateProduct"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
